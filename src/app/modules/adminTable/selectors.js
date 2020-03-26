@@ -1,0 +1,1 @@
+export const getAdminRawData = state => state.admin.adminRawData;

@@ -1,0 +1,231 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow-x: hidden;
+    user-select: none;
+}
+
+#root{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+.page-wrapper{
+    display: flex;
+    flex-direction: column;
+    min-width: 736px;
+    width: 100%;
+    height: 100%;
+    font-family: 'Alata', sans-serif;
+    background-image: radial-gradient(#CEC1, #2F8FD8);
+
+    &__header{
+        width: 100%;
+        height: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+        border-bottom: 1px solid blue;
+    }
+
+    &__main{
+        width: 100%;
+        display: flex;
+        flex: 1;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: left;
+    }
+
+    &__footer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 80px;
+        box-sizing: border-box;
+        border-top: 1px solid blue;
+    }
+}
+
+.main{
+    &__form{
+        width: 50%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        overflow: auto;
+    }
+}
+
+.header{
+    &__wrapper{
+        display: flex;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+.header-wrapper{
+    &__logo {
+        padding: 10px;
+        width: 150px;
+        display: flex;
+        justify-content: start;
+        img{
+            width: 100%;
+        }
+    }
+
+    &__settings{
+        width: 60px;
+        
+        img{
+            cursor: pointer;
+        }
+
+        img:hover{
+            animation-name: circle;
+            animation-duration: 3s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes circle {
+            0% {
+              transform: rotate(0deg);
+            }
+            100% {
+              transform: rotate(360deg);
+            }
+        }
+    }
+}
+
+.footer{
+    &__copyright{
+        text-align: center;
+    }
+}
+
+.modal-window{
+    width: 50%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.input-style{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    border:none;
+    opacity: 0.7;
+    outline: none;
+    border-bottom: 2px solid #3399ff;
+    transition-duration: 0.8s;
+    cursor: pointer;
+    &:focus {
+        background-color: #4CCEB2;
+        color: black;
+        border-bottom: 2px solid  #2F8FD8;
+    }
+}
+.button-style{
+    padding: 5px;
+    background-color: #fff;
+    color: #000;
+    border: 2px solid #2F8FD8;
+    border-radius: 10px;
+    font-size: 15px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    outline: none;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+    &:hover {
+        background-color: #3ba5b2;
+        color: #fff;
+    }
+}
+
+.authorization-form-item {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5px;
+    width: 250px;
+    padding: 2px 0 2px 0;
+    font-size: 15px;
+}
+
+.authorization-form-item:last-child{
+    align-items: center;
+}
+
+.registration-form {
+    display: flex;
+    flex-direction: column;
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        width: 250px;
+        padding: 2px 0 2px 0;
+        font-size: 15px;
+    }
+}
+
+.modal-window__item {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5%;
+    justify-content: center;
+    padding: 2px 0 2px 0;
+    font-size: 15px;
+    width: 250px;
+}
+
+.output-style{
+    visibility: hidden;
+    font-size: 10px;
+}
+.red-border{
+    border-bottom: 2px solid red;
+}
+
+.error-message{
+    visibility: visible;
+    color: red;
+}
+
+.phone-number{
+    display: flex;
+    box-sizing: border-box;
+
+    &__code{
+        width: 30%;
+    }
+
+    &__number{
+        width: 70%;
+    }
+}
+
+.out{
+    visibility: hidden;
+}
+
+.show-password{
+    visibility: visible;
+}

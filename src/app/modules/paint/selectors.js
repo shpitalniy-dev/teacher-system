@@ -1,0 +1,1 @@
+export const getLines = state => state.paint.lines;

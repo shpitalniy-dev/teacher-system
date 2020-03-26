@@ -1,0 +1,13 @@
+use users
+db.createCollection("users")
+db.users.insertOne({"login":"firstLogin"})
+db.users.insertMany([{"login":"firstLogin"}, {"login":"firstLogin"}])
+db.users.find()
+db.users.find({}, {_id: 0}).sort({_id: 1})
+db.users.find({login: "firstLogin"}, {_id: 0}) //All users with login "firstLogin"
+db.users.updateOne({login: "firstLogin"}, {$set: {age: 22}})
+db.users.updateMany({login: "firstLogin"}, {$set: {age: age + 1}})
+db.users.updateOne({login: "firstLogin"}, {$inc: {age: 1}})
+db.users.deleteOne({age: {$gt: 25}, age: {$lt: 35}})
+db.users.deleteOne({age: {$lt: 25}})
+db.users.deleteMany({age: {$lt: 25}})

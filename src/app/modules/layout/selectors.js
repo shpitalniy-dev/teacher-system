@@ -1,0 +1,12 @@
+export const getActiveMode = state => state.common.activeMode;
+export const getLocale = state => state.translates.locale;
+export const getDictionary = state => state.translates.dictionary;
+export const getIsModal = state => state.common.isModal;
+export const getModal = state => state.common.modal;
+export const getConfirm = state => state.common.confirm;
+export const getTeacher = state => state.users.teacher;
+export const getGroups = state => state.users.groupNames;
+export const getChatUsers = state => state.chats.users;
+export const getChats = state => state.chats.chats;
+export const getActiveChat = state => state.chats.activeChat;
+export const getIsRead = state => state.chats.isRead;

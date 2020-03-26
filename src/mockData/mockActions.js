@@ -1,0 +1,1 @@
+export const changeConverterActiveMode = payload => ({ type: "CHANGE_CONVERTER_MODE", payload });

@@ -1,0 +1,66 @@
+.account-container {
+  display: flex;
+  height: 100%;
+  width: 100%;
+
+  &__left-side {
+    display: flex;
+    width: 50%;
+    height: 100%;
+    flex-direction: column;
+  }
+
+  &__right-side {
+    display: flex;
+    width: 50%;
+    height: 100%;
+    flex-direction: column;
+  }
+}
+
+.left-side {
+  &__user-profile {
+    display: flex;
+    flex: 1;
+    border: 1px solid #3399ff;
+    box-sizing: border-box;
+  }
+  &__add-info {
+    height: 30%;
+   border: 1px solid #3399ff;
+    box-sizing: border-box;
+  }
+}
+
+.right-side {
+  &__chat {
+    display: flex;
+    flex: 1;
+    border: 1px solid #3399ff;
+    box-sizing: border-box;
+    overflow-y: auto;
+  }
+  &__game {
+    display: flex;
+    height: 30%;
+    justify-content: center;
+    align-items: center;
+   border: 1px solid #3399ff;
+    box-sizing: border-box;
+  }
+}
+
+.add-info {
+  display: flex;
+  flex-direction: column;
+
+  &__title {
+    display: flex;
+    height: 10%;
+  }
+
+  &__textarea {
+    display: flex;
+    flex: 1;
+  }
+}

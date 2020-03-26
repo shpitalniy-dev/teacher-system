@@ -1,0 +1,1 @@
+export const getUserProfileMode = state => state.userProfile.isChangeMode;

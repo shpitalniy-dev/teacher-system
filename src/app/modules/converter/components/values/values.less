@@ -1,0 +1,81 @@
+.converter-values {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+
+  &__block-from {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__block-to {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__button-container {
+    display: flex;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.block-from {
+  height: 50px;
+  justify-content: space-between;
+
+  &__input-value {
+    width: 150px;
+    box-sizing: border-box;
+    border: 1px solid lightblue;
+  }
+
+  &__select-type {
+    width: 150px;
+    cursor: pointer;
+  }
+}
+
+.block-to {
+  height: 50px;
+  justify-content: space-between;
+
+  &__input-value {
+    width: 150px;
+    box-sizing: border-box;
+
+    &:disabled {
+      background: white;
+      cursor: no-drop;
+      border: 1px solid lightblue;
+    }
+  }
+
+  &__select-type {
+    width: 150px;
+  }
+}
+
+.button-container {
+
+  &__convert-button {
+    width: 200px;
+    height: 30px;
+    border: 1px solid lightblue;
+    border-radius: 5px;
+    cursor: pointer;
+
+    &:focus{
+      outline: none;
+    }
+  }
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

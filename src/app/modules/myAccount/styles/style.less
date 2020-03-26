@@ -1,0 +1,54 @@
+.main-container {
+    min-width            : 100%;
+    min-height           : 100%;
+    display              : grid;
+    grid-template-rows   : 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+
+    &__sidebar {
+        background-color: orange;
+        display         : grid;
+        align-items     : center;
+        justify-items   : center;
+        border          : 2px solid black;
+    }
+
+    &__chat {
+        display: flex;
+        border : 2px solid black;
+    }
+
+    &__game {
+        background-color: orange;
+        display         : grid;
+        align-items     : center;
+        justify-items   : center;
+        border          : 2px solid black;
+    }
+
+    &__addInfo {
+        background-color: orange;
+        border          : 2px solid black;
+    }
+}
+
+.sidebar-avatar {
+    width : 80px;
+    height: 70px;
+    border: 2px solid black;
+}
+
+.chat-window {
+    width : 90%;
+    height: 90%;
+    border: 2px solid black;
+}
+
+.game-window {
+    width : 90%;
+    height: 90%;
+    border: 2px solid black;
+}
+
+
+
